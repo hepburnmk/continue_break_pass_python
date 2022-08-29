@@ -1,0 +1,45 @@
+for letter in "string":
+    if letter =="i" or letter == "g":
+        continue
+    print(letter)
+print("the end")
+
+
+for i in range (1,10):
+    if i % 2 == 0:
+        print("is %s an even number?" % i)
+    else:
+        continue
+    print("yes")
+
+colours = ["red", "green", "blue"]
+french_colours = ["rouge", "vert", "bleu"]
+
+new_dict = dict()
+
+for a, b in zip(colours, french_colours):
+    new_dict.update({a:b})
+
+    if new_dict[a] == "rouge":
+        continue
+    else:
+        print(a)
+
+letters= 0
+numbers = 0
+
+my_string = input("Please enter something: ")
+
+for i in my_string:
+    if i.isdigit():
+        numbers +=1
+
+    elif i.isalpha():
+        letters +=1
+
+    else:
+        pass
+
+print("number of letters is" , letters)
+print("number of letters is", numbers)
+    
